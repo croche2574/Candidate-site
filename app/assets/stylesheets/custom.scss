@@ -1,0 +1,51 @@
+
+
+$textH1: #1798CB;
+$textMain: #005D7D;
+$accent1: #003262;
+$accent2: #83B6CD;
+$accent3: #B7CDD9;
+$accent4: #CEEBEF;
+$accent5: #E1EBF4;
+$accent6: #DFE1DF;
+$accent7: #F1563F;
+$accent8: #62BB46;
+$accent9: #f41b49;
+
+h1 {
+    color: #1798CB
+}
+
+h2 {
+    color: #005D7D
+}
+
+.top-bar {
+    background-color: #003262;
+}
+
+.top-bar-section ul {
+    background-color: #003262;
+}
+
+
+.top-bar-section ul.right {
+    background-color: #003262
+}
+.top-bar-section li a:not(.button) {
+    background-color: #003262;
+}
+
+.top-bar-section ul li.active > a {
+   background-color: #003262;
+}
+
+/** Changes the hover state of non active menu items **/
+.top-bar-section li:hover a {
+    background-color: #003262;
+}
+
+
+.top-bar-section ul li > a {
+    background-color: #003262;
+}
