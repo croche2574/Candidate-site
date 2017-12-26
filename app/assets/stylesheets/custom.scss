@@ -1,5 +1,3 @@
-
-
 $textH1: #1798CB;
 $textMain: #005D7D;
 $accent1: #003262;
@@ -12,12 +10,30 @@ $accent7: #F1563F;
 $accent8: #62BB46;
 $accent9: #f41b49;
 
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: font-url('gotham_bold_regular-webfont.woff2') format('woff2'),
+         font-url('gotham_bold_regular-webfont.woff') format('woff'),
+         font-url('gotham_bold_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gotham_bookregular";
+    src: font-url('gotham_book_regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
-    color: #1798CB
+    color: #1798CB;
+    font-family: "gotham_boldregular";
 }
 
 h2 {
-    color: #005D7D
+    color: #005D7D;
+    font-family: "gotham_bookregular";
 }
 
 .top-bar {
