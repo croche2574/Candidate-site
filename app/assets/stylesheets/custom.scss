@@ -1,5 +1,7 @@
+/* Color Palette */
 $textH1: #1798CB;
 $textMain: #005D7D;
+$navborder: #78909c;
 $accent1: #003262;
 $accent2: #83B6CD;
 $accent3: #B7CDD9;
@@ -10,6 +12,7 @@ $accent7: #F1563F;
 $accent8: #62BB46;
 $accent9: #f41b49;
 
+/* Fonts */
 @font-face {
     font-family: 'gotham_boldregular';
     src: font-url('gotham_bold_regular-webfont.woff2') format('woff2'),
@@ -26,6 +29,7 @@ $accent9: #f41b49;
     font-style: normal;
 }
 
+/* Text Styles */
 h1 {
     color: #1798CB;
     font-family: "gotham_boldregular";
@@ -36,32 +40,84 @@ h2 {
     font-family: "gotham_bookregular";
 }
 
+h3 {
+    color: #005D7D;
+    font-family: "gotham_bookregular";
+}
+
+
+
+
+
+/* Nav-bar Style */
 .top-bar {
+    background-color: #fff;
+    border-bottom-color: #78909c;
+    border-left-color: #78909c;
+    border-right-color: #78909c;
+    color: #78909c;
+    font-family: 'gotham_bookregular';
+    font-size: 14px;
+    font-weight: 400;
+    height: 70px;
+    line-height: 70px;
+    padding-bottom: 11.2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    vertical-align: baseline;
+    width: 100%;
+    
+}
+
+.top-bar, .top-bar ul {
     background-color: #003262;
 }
 
-.top-bar-section ul {
+.top-bar, .top-bar a {
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    a {
+        color: #8c8e91;
+    }
     background-color: #003262;
+    border-bottom-color: #78909c;
+    border-left-color: #78909c;
+    border-right-color: #78909c;
+    color: #78909c;
+    font-family: 'gotham_bookregular';
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    max-width: 1140px;
+    padding: 3rem 3rem;
+    small {
+        float: left;
+    }
+    ul {
+        float: right;
+        list-style: none;
+        li {
+            float: left;
+            margin-left: 15px;
+
+        }
+    }
+    vertical-align: baseline;
+    width: 100%;
+
 }
 
 
-.top-bar-section ul.right {
-    background-color: #003262
-}
-.top-bar-section li a:not(.button) {
-    background-color: #003262;
+
+/* Button */
+
+button {
+    background-color: #f41b49;
+    font-family: 'gotham_bookregular'
 }
 
-.top-bar-section ul li.active > a {
-   background-color: #003262;
-}
-
-/** Changes the hover state of non active menu items **/
-.top-bar-section li:hover a {
-    background-color: #003262;
-}
-
-
-.top-bar-section ul li > a {
-    background-color: #003262;
-}

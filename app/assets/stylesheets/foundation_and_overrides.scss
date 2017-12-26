@@ -12,7 +12,7 @@
 @include foundation-global-styles;
 @include foundation-xy-grid-classes;
 //@include foundation-grid;
-//@include foundation-flex-grid;
+@include foundation-flex-grid;
 @include foundation-flex-classes;
 @include foundation-typography;
 @include foundation-forms;
@@ -54,3 +54,5 @@
 //
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
+$global-flexbox: true;
