@@ -55,3 +55,5 @@ gem 'foundation-rails'
 gem 'serviceworker-rails'
 
 gem 'coffee-script-source', '1.8.0'
+
+gem 'jquery-rails'
