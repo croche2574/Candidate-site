@@ -45,7 +45,15 @@ h3 {
     font-family: "gotham_bookregular";
 }
 
+h4 {
+    color: #005D7D;
+    font-family: "gotham_bookregular";
+}
 
+h5 {
+    color: #005D7D;
+    font-family: "gotham_bookregular";
+}
 
 
 
@@ -93,7 +101,7 @@ footer {
     font-size: 14px;
     font-weight: 400;
     height: 45px;
-    max-width: 1140px;
+    max-width: 100%;
     padding: 3rem 3rem;
     small {
         float: left;
@@ -116,3 +124,35 @@ footer {
 
 /* Button */
 
+
+/* Page Content */
+
+#pageHeader {
+    padding-top: 65px;
+    text-align: left;
+    span {
+        font-family: 'gotham_bookregular';
+        color: #005D7D;
+        
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+#all {
+    height: 100%;
+}
+
+.morecontent {
+    font-family: 'gotham_bookregular';
+    
+    span {
+        display: none;
+        font-family: 'gotham_bookregular';
+        
+    }
+}
+.morelink {
+    display: block;
+    font-family: 'gotham_bookregular';
+}
