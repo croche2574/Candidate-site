@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'main_pages/index'
+  get '/about', to: 'main_pages#about'
 
-  get 'main_pages/about'
-
-  get 'main_pages/terms'
+  get '/terms', to: 'main_pages#terms'
 
   root 'main_pages#index'
 

@@ -100,7 +100,8 @@ footer {
     font-family: 'gotham_bookregular';
     font-size: 14px;
     font-weight: 400;
-    height: 45px;
+    height: 3.778rem;
+    justify-content: space-between;
     max-width: 100%;
     padding: 3rem 3rem;
     small {
@@ -117,16 +118,12 @@ footer {
     }
     vertical-align: baseline;
     width: 100%;
-
 }
-
-
 
 /* Button */
 
 
 /* Page Content */
-
 #pageHeader {
     padding-top: 65px;
     text-align: left;
