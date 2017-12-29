@@ -61,3 +61,5 @@ gem 'jquery-rails'
 gem 'modernizr-rails'
 
 gem "font-awesome-rails"
+
+gem 'webpush'
