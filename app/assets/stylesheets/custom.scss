@@ -178,7 +178,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
     &::after {
       position: relative;
       width: $about-the-candidate-separator-width;
-      border-bottom: $about-the-candidate-separator-thickness solid $primary-color;
+      border-bottom: $about-the-candidate-separator-thickness solid $accent9;
       margin: 0.3rem auto 0;
       margin-left: 0;
     }
