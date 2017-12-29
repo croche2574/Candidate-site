@@ -189,7 +189,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
   }
 
   .candidate-social {
-    text-align: center;
+    text-align: left;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
 
@@ -222,11 +222,21 @@ $about-the-candidate-separator-thickness: 0.125rem;
           color: $social-brand-linkedin;
         }
       }
+
+      &.website {
+        color: lighten($accent8, 10%);
+
+        &:hover,
+        &:focus {
+          color: $accent8;
+        }
+      }
     }
   }
 
   .candidate-image {
     border: 1px solid $medium-gray;
+    width: 200px;
   }
 }
 
