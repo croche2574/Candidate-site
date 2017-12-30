@@ -56,7 +56,10 @@ h5 {
     font-family: "gotham_bookregular";
 }
 
-
+/* Body */
+body {
+    
+}
 
 /* Nav-bar Style */
 .top-bar {
@@ -170,6 +173,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
   background-color: $white;
   padding: 1rem;
   border: 1px solid $medium-gray;
+  width: 100%;
 
   .separator-left {
     text-align: left;
@@ -237,6 +241,27 @@ $about-the-candidate-separator-thickness: 0.125rem;
   .candidate-image {
     border: 1px solid $medium-gray;
     width: 200px;
+  }
+  
+  .candidate-views-button {
+    
+    background: $accent9;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'gotham_bookregular';
+    letter-spacing: 1px;
+    color: white;
+    min-height: 55px;
+    &:hover,
+    &:focus {
+        background: darken($accent9, 10%);
+    }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-left: 28px;  
+    text-align: center;
+    vertical-align: middle;  
   }
 }
 
