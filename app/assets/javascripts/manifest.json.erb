@@ -1,7 +1,7 @@
 <% icon_sizes = Rails.configuration.serviceworker.icon_sizes %>
 {
-  "name": "My Progressive Rails App",
-  "short_name": "Progressive",
+  "name": "PCPDC Candidate Assesment App",
+  "short_name": "PCPDC Assesment",
   "start_url": "/",
   "icons": [
   <% icon_sizes.map { |s| "#{s}x#{s}" }.each.with_index do |dim, i| %>
@@ -12,7 +12,7 @@
     }<%= i == (icon_sizes.length - 1) ? '' : ',' %>
   <% end %>
   ],
-  "theme_color": "#000000",
+  "theme_color": "#003262",
   "background_color": "#FFFFFF",
   "display": "fullscreen",
   "orientation": "portrait"

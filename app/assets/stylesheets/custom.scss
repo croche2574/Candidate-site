@@ -97,6 +97,10 @@ body {
 footer {
     a {
         color: #8c8e91;
+        &:hover,
+        &:focus {
+          color: lighten(#8c8e91, 15%);
+        }
     }
     background-color: #003262;
     border-bottom-color: #78909c;
