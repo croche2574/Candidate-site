@@ -61,33 +61,101 @@ body {
     
 }
 
-/* Nav-bar Style */
-.top-bar {
-    background-color: #fff;
-    border-bottom-color: #78909c;
-    border-left-color: #78909c;
-    border-right-color: #78909c;
-    color: #78909c;
-    font-family: 'gotham_bookregular';
-    font-size: 14px;
-    font-weight: 400;
-    height: 70px;
-    line-height: 70px;
-    padding-bottom: 11.2px;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: absolute;
-    vertical-align: baseline;
+/* Test Nav */
+
+$nav-padding: 1rem;
+$nav-text-color: white;
+$nav-bg-color: $accent1;
+
+.responsive-nav-social-mobile {
+  background: $nav-bg-color;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .responsive-nav-social-mobile-left {
+    flex: 1 0 0;
+
+    li {
+      font-size: 1.5rem;
+      
+
+      .fa {
+        color: $nav-text-color;
+        margin-right: -0.7rem;
+      }
+    }
+  }
+
+  .responsive-nav-social-mobile-right {
+    .menu-icon {
+      margin-right: $nav-padding;
+
+      &::after {
+        padding-right: 1.5rem;
+        background: white;
+        box-shadow: 0 7px 0 white, 0 14px 0 white;
+      }
+    }
+  }
+}
+
+.responsive-nav-social {
+  padding: $nav-padding;
+  background-color: $nav-bg-color;
+
+   &.is-stuck {
     width: 100%;
-    
+    box-shadow: 0px 4px 10px -2px rgba(128,128,128,0.68);
+   }
+
+   a {
+     color: $nav-text-color;
+     font-size: 0.9rem;
+     font-family: 'gotham_bookregular';
+     
+  }
+
+  @include breakpoint (small only) {
+    .menu li a {
+       font-size: 1.5rem;
+       padding: 1.5rem;
+       color: white;
+     }
+
+     li {
+        
+
+        &:last-of-type {
+          border: 0;
+       }
+     }
+
+     .responsive-nav-social-left {
+       width: 100%;
+
+       .menu.vertical a {
+        justify-content: center;
+       }
+     }
+   }
+
+  .responsive-nav-social-right {
+    a {
+      padding-right: 0.1rem;
+    }
+  }
+
+  i.fa {
+    font-size: 1.3rem;
+    color: $nav-text-color;
+
+       
+  }
 }
 
-.top-bar, .top-bar ul {
-    background-color: #003262;
-}
-
-.top-bar, .top-bar a {
-    color: #fff;
+.sticky-container {
+  width: 100%;
 }
 
 
@@ -135,7 +203,7 @@ footer {
 
 /* Page Content */
 #pageHeader {
-    padding-top: 65px;
+    padding-top: 2rem;
     text-align: left;
     span {
         font-family: 'gotham_bookregular';
