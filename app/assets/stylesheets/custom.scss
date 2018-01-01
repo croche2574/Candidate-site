@@ -247,7 +247,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
   border: 1px solid $medium-gray;
   width: 100%;
 
-  .separator-left {
+  .candidate-info {
     text-align: left;
     @include clearfix;
 
