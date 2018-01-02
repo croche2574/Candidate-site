@@ -244,6 +244,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
 .about-the-candidate {
   background-color: $white;
   padding: 1rem;
+  margin: .25rem;
   border: 1px solid $medium-gray;
   width: 100%;
 
@@ -259,7 +260,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
       margin-left: 0;
     }
   }
-
+  
   .candidate-title {
     text-transform: $about-the-candidate-text-transform;
   }
