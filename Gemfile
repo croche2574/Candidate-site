@@ -63,3 +63,7 @@ gem 'modernizr-rails'
 gem "font-awesome-rails"
 
 gem 'webpush'
+
+gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
+
+gem "figaro"

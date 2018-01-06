@@ -9,22 +9,22 @@ var transform =    {"<>":"main","class":"main","html":[
                                     {"<>":"div","class":"date","hidden":"","html":""},
                                     {"<>":"div","class":"small-12 medium-3 columns","html":[
                                         {"<>":"div","class":"candidate-image","html":[
-                                            {"<>":"img","src":"${image}","alt":"${name}","html":""}
+                                            {"<>":"img","src":"/assets/${image}","alt":"${name}","html":""}
                                         ]},
                                         {"<>":"div","class":"candidate-social socialMedia","html":[
-                                            {"<>":"a","href":"${facebookURL}","class":"facebook","html":[
+                                            {"<>":"a","href":"${facebookURL}","class":"facebook","style":"display:${fdisp}","html":[
                                                 {"<>":"span","class":"fa-stack fa-lg facebook","html":[
                                                     {"<>":"i","class":"fa fa-circle fa-stack-2x","html":""},
                                                     {"<>":"i","class":"fa fa-facebook fa-stack-1x fa-inverse","html":""}
                                                 ]}
                                             ]},
-                                            {"<>":"a","href":"${email}","class":"email","html":[
+                                            {"<>":"a","href":"mailto:${email}","class":"email","style":"display:${edisp}","html":[
                                                 {"<>":"span","class":"fa-stack fa-lg email","html":[
                                                     {"<>":"i","class":"fa fa-circle fa-stack-2x","html":""},
                                                     {"<>":"i","class":"fa fa-envelope fa-stack-1x fa-inverse","html":""}
                                                 ]}
                                             ]},
-                                            {"<>":"a","href":"${websiteURL}","class":"website","html":[
+                                            {"<>":"a","href":"${websiteURL}","class":"website","style":"display:${wdisp}","html":[
                                                 {"<>":"span","class":"fa-stack fa-lg website","html":[
                                                     {"<>":"i","class":"fa fa-circle fa-stack-2x","html":""},
                                                     {"<>":"i","class":"fa fa-link fa-stack-1x fa-inverse","html":""}
@@ -49,9 +49,10 @@ var transform =    {"<>":"main","class":"main","html":[
 
 var data = [
            {'race':'Florida House District 42',
-           'image':'http://clientsdata.buco3.com/183/images/uploaded/barbaracady_flh42_2018.jpg',
+           'image':'barbaracady.jpg',
            'name':'Barbara Cady',
            'facebookURL': '#',
+           'fdisp': 'none',
            'email': 'barbara@barbaracady.com',
            'websiteURL': 'http://www.barbaracady.com/',
            'phone':'321 320 4388',
@@ -59,9 +60,10 @@ var data = [
            'rating':'Very Progressive'},
 
            {'race':'Florida Senate District 22',
-           'image':'http://polkdemocrats.org/images/uploaded/RobertDoyel_FL41_2016.jpg',
+           'image':'RobertDoyel.jpg',
            'name':'Robert Doyel',
            'facebookURL': '#',
+           'fdisp': 'none',
            'email': 'DoyelForFlorida@earthlink.net',
            'websiteURL': 'http://robertdoyel.com/',
            'phone':'N/A',
@@ -69,7 +71,7 @@ var data = [
            'rating':'Very Progressive'},
 
            {'race':'United States House District 15',
-           'image':'http://clientsdata.buco3.com/183/images/uploaded/raymondpena_uscd15_2018.jpg',
+           'image':'raymondpena.jpg',
            'name':'Raymond Pena',
            'facebookURL': 'https://www.facebook.com/congressionaldistrict15/',
            'email': 'raypena@raymondpenaforcongress.org',
@@ -79,11 +81,13 @@ var data = [
            'rating':'Very Progressive'},
 
            {'race':'United States House District 17',
-           'image':'http://polkdemocrats.org/images/uploaded/BillPollardJr_USCD17_2018.jpg',
+           'image':'BillPollardJr.jpg',
            'name':'Bill Pollard Jr.',
            'facebookURL': 'https://www.facebook.com/BILLPOLLARDFL17/',
            'email': '#',
+           'edisp': 'none',
            'websiteURL': '#',
+           'wdisp': 'none',
            'phone':'N/A',
            'address':'P.O. Box 1124, Sebring, FL 33810',
            'rating':'Very Progressive'}

@@ -2,7 +2,7 @@ class MainPagesController < ApplicationController
   def index
   end
 
-  def about
+  def contact
   end
 
   def terms

@@ -178,10 +178,13 @@ footer {
     font-family: 'gotham_bookregular';
     font-size: 14px;
     font-weight: 400;
-    height: 3.778rem;
+    height: 9rem;
     justify-content: space-between;
     max-width: 100%;
     padding: 3rem 3rem;
+    
+    left:0px;
+    bottom:0px;
     small {
         float: left;
     }
@@ -314,6 +317,7 @@ $about-the-candidate-separator-thickness: 0.125rem;
   .candidate-image {
     border: 1px solid $medium-gray;
     width: 200px;
+    
   }
   
   .candidate-views-button {
@@ -338,3 +342,8 @@ $about-the-candidate-separator-thickness: 0.125rem;
   }
 }
 
+/* Email Form */
+
+input, textarea {
+  display: block;
+}

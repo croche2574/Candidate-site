@@ -24,7 +24,7 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         
-    }, 3000);
+    }, 2000);
     // Configure/customize these variables.
     var showChar = 525;  // How many characters are shown by default
     var ellipsestext = "...";
