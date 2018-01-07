@@ -62,5 +62,6 @@ $(document).on('turbolinks:load', function() {
             return false;
         });
     }
+    $("#responsive-nav-social").attr("data-sticky", "true").foundation();
 });
 

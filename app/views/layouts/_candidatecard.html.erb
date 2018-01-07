@@ -35,7 +35,9 @@ var transform =    {"<>":"main","class":"main","html":[
                                     {"<>":"div","class":"small-12 medium-8 columns","html":[
                                         {"<>":"h4","class":"candidate-info name","html":"${name}"},
                                         {"<>":"ul","html":[
-                                            {"<>":"li","class":"phone-number","html":"Phone Number: ${phone}"},
+                                            {"<>":"li","class":"phone-number","html":[
+                                                {"<>":"a","href":"tel:${phone}","html":"Phone Number: ${phone}"}
+                                            ]},
                                             {"<>":"li","class":"address","html":"Address: ${address}"},
                                             {"<>":"li","class":"progressive-rating","html":"Progressive Rating: ${rating}"}
                                         ]},
@@ -55,7 +57,7 @@ var data = [
            'fdisp': 'none',
            'email': 'barbara@barbaracady.com',
            'websiteURL': 'http://www.barbaracady.com/',
-           'phone':'321 320 4388',
+           'phone':'321-320-4388',
            'address':'2920 Winding Trail, Kissimmee, FL 34746',
            'rating':'Very Progressive'},
 
