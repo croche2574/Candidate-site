@@ -18,15 +18,17 @@
 //= require init.js
 //= require serviceworker-companion
 
-$(function(){ $(document).foundation(); });
+$(document).on('turbolinks:load', function() {
+    $(function(){ $(document).foundation(); });
+  });
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         
     }, 2000);
     // Configure/customize these variables.
-    var showChar = 525;  // How many characters are shown by default
+    var showChar = 524;  // How many characters are shown by default
     var ellipsestext = "...";
     var moretext = "Show more >";
     var lesstext = "Show less";

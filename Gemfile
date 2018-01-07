@@ -67,3 +67,5 @@ gem 'webpush'
 gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
 
 gem "figaro"
+
+gem 'jquery-turbolinks'
