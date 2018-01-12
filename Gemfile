@@ -69,3 +69,5 @@ gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
 gem "figaro"
 
 gem 'jquery-turbolinks'
+
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
