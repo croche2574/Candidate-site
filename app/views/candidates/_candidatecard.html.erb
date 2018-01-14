@@ -35,11 +35,14 @@
                             <h4 class="candidate-info name"><%= candidate.name %></h4>
                             <h5 class="progressive-rating">PCPDC Rating: <%= candidate.rating %></h5>
                             <ul>
-                                <li class="phone-number"><span>Phone Number:</span><a href="tel:${phone}"> <%= candidate.phone %></a></li>
+                                <li class="phone-number"><span>Phone Number:</span><a href="tel:"> <%= candidate.phone %></a></li>
                                 <li class="address">Address: <%= candidate.address %></li>
-                            </ul><button class="candidate-views-button">Position Statements</button></div>
+                            </ul>
+                            <%= link_to "View Responses",
+                                candidate_path(candidate),
+                                class: "candidate-views-button" %>
                         </div>
-                    </div>
+                   </div>
                 </div>
         </div><br>
     </main>

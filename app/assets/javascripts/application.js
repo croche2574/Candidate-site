@@ -15,6 +15,7 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
+//= stub "serviceworker"
 //= require init.js
 //= require serviceworker-companion
 
@@ -28,7 +29,7 @@ $(document).on('turbolinks:load', function() {
         
     }, 2000);
     // Configure/customize these variables.
-    var showChar = 524;  // How many characters are shown by default
+    var showChar = 401;  // How many characters are shown by default
     var ellipsestext = "...";
     var moretext = "Show more >";
     var lesstext = "Show less";

@@ -35,6 +35,8 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.find(params[:id])
     if @candidate.update_attributes(candidate_params)
       # Handle a successful update.
+      flash[:success] = "Candidate updated"
+      redirect_to @candidate
     else
       render 'edit'
     end
@@ -43,6 +45,6 @@ class CandidatesController < ApplicationController
   private
 
     def candidate_params
-      params.require(:candidate).permit(:name, :phone, :email, :address, :website, :facebook, :race, :rating, :imgur_id)
+      params.require(:candidate).permit(:name, :phone, :email, :address, :website, :facebook, :race, :rating, :imgur_id, :section1, :section2, :section3, :section4, :section5, :section6, :section7, :section8)
     end
 end
