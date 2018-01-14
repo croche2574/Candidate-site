@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180114020944) do
+ActiveRecord::Schema.define(version: 20180114135610) do
 
   create_table "candidates", force: :cascade do |t|
     t.string "race"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20180114020944) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "imgur_id"
+    t.string "section1"
+    t.string "section2"
+    t.string "section3"
+    t.string "section4"
+    t.string "section5"
+    t.string "section6"
+    t.string "section7"
+    t.string "section8"
   end
 
   create_table "users", force: :cascade do |t|

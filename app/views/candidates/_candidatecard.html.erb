@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="small-12 medium-3 columns">
                         <div class="candidate-image">
-                            <img src="<%= candidate.image_url %>" alt="<%= candidate.name %>">
+                            <%= image_for candidate %>
                         </div>
                         <div class="candidate-social socialMedia">
                             <% if candidate.facebook %>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="small-12 medium-8 columns">
                             <h4 class="candidate-info name"><%= candidate.name %></h4>
-                            <h5 class="progressive-rating">Progressive Rating: <%= candidate.rating %></h5>
+                            <h5 class="progressive-rating">PCPDC Rating: <%= candidate.rating %></h5>
                             <ul>
                                 <li class="phone-number"><span>Phone Number:</span><a href="tel:${phone}"> <%= candidate.phone %></a></li>
                                 <li class="address">Address: <%= candidate.address %></li>

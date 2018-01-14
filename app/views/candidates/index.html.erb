@@ -4,7 +4,7 @@
 <ul class="users">
   <% @candidates.each do |candidate| %>
     <li>
-      <%= image_for candidate %>
+      <%= image_for_thumb candidate %>
       <%= link_to candidate.name, candidate %>
     </li>
   <% end %>
