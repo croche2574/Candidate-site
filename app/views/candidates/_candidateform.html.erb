@@ -1,11 +1,11 @@
 <%= form_for(@candidate) do |f| %>
-    <%= render 'shared/error_messages' %>
+    
     
     <%= f.label :name %>
     <%= f.text_field :name, class: 'form-control' %>
 
-    <%= f.label :image_url %>
-    <%= f.text_field :image_url, class: 'form-control'%>
+    <%= f.label :imgur_id %>
+    <%= f.text_field :imgur_id, class: 'form-control'%>
 
     <%= f.label :race %>
     <%= f.text_field :race, class: 'form-control' %>

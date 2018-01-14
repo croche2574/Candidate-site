@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20180114020944) do
     t.string "facebook"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "image_url"
+    t.string "imgur_id"
   end
 
   create_table "users", force: :cascade do |t|

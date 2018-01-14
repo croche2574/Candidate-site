@@ -4,6 +4,10 @@ class CandidatesController < ApplicationController
     @candidates = Candidate.all
   end
 
+  def home
+    @candidates = Candidate.all
+  end
+
   def new
     @candidate = Candidate.new
   end
@@ -39,6 +43,6 @@ class CandidatesController < ApplicationController
   private
 
     def candidate_params
-      params.require(:candidate).permit(:name, :phone, :email, :address, :website, :facebook, :race, :rating, :image_url)
+      params.require(:candidate).permit(:name, :phone, :email, :address, :website, :facebook, :race, :rating, :imgur_id)
     end
 end

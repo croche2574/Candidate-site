@@ -1,37 +1,11 @@
-<% provide(:title, "Home") %>
-<div id="pageHeader">
-    <%= render 'layouts/loader'%>
-    <div class="row">
-        <span><h1>Candidate Ratings based on Progressive Questionaire</h1></span>
-    </div>
-    <div class="row">
-        <span><h3>2018 Candidate Assessment and Voter Awareness Initiative</h2></span>
-    </div>
-    <div class="row">
-        <span class="more" id="description">
-        The energy and resources ready and waiting to support Progressive Democratic candidates 
-        are at an all-time high. The Polk County Progressive Democratic Caucus (PCPDC) Candidate 
-        Assessment and Voter Awareness Initiative was established to provide a reference for declared 
-        Progressives and other Democrats and independents with progressive values to determine where 
-        to focus their energy and resources.<br><br>
+<% provide(:title, 'All candidates') %>
+<h1>All candidates</h1>
 
-        Questionnaires were sent to all candidates who have filed as Democrats for national or state
-        offices that touch on Polk county. A select committee of PCPDC members is in place to apply 
-        predefined criteria in an objective blind evaluation of candidate responses as they are received. 
-        The questionnaires reflect a Progressive Democratic agenda. In fact, the questions were derived 
-        directly from the Democratic Progressive Caucus of Florida’s platform.<br><br>
-
-        The evaluation rating indicates each candidate’s level of support for the progressive agenda. 
-        In accordance with Florida Democratic Party bylaws, these evaluation ratings are not intended 
-        to imply endorsement during this primary season, but rather to inform progressive minded voters
-        within the county of each candidate’s overall alignment with progressive values.<br><br>
-
-        While all candidates were invited to participate in this initiative, not all have chosen to do so. 
-        We will continue to issue reminders from time to time, and will update postings with evaluations 
-        of new responses as they are received.<br><br>
-        </span>
-        
-    </div>
-    
-</div>
-<%= render 'candidates/candidatecard'%>
+<ul class="users">
+  <% @candidates.each do |candidate| %>
+    <li>
+      <%= image_for candidate %>
+      <%= link_to candidate.name, candidate %>
+    </li>
+  <% end %>
+</ul>

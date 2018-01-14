@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   
-  root 'candidates#index'
+  root 'candidates#home'
 
   resources :users
   resources :candidates
