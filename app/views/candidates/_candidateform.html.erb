@@ -1,0 +1,31 @@
+<%= form_for(@candidate) do |f| %>
+    <%= render 'shared/error_messages' %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url, class: 'form-control'%>
+
+    <%= f.label :race %>
+    <%= f.text_field :race, class: 'form-control' %>
+
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+
+    <%= f.label :facebook %>
+    <%= f.text_field :facebook %>
+    <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
