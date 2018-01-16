@@ -1,3 +1,110 @@
 // Place all the styles related to the Candidates controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'custom';
+/* Candidate Card */
+// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+$social-brand-facebook: #3b5998;
+$social-brand-twitter: #55acee;
+$social-brand-email: #dd4b39;
+$about-the-candidate-text-transform: uppercase;
+$about-the-candidate-separator-width: 5rem;
+$about-the-candidate-separator-thickness: 0.125rem;
+
+.about-the-candidate {
+  background-color: $white;
+  padding: 1rem;
+  margin: .25rem;
+  border: 1px solid $medium-gray;
+  width: 100%;
+
+  .candidate-info {
+    text-align: left;
+    @include clearfix;
+
+    &::after {
+      position: relative;
+      width: $about-the-candidate-separator-width;
+      border-bottom: $about-the-candidate-separator-thickness solid $accent9;
+      margin: 0.3rem auto 0;
+      margin-left: 0;
+    }
+  }
+  
+  .candidate-title {
+    text-transform: $about-the-candidate-text-transform;
+  }
+
+  .candidate-social {
+    text-align: left;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+
+    .fa-stack {
+      display: inline-block;
+
+      &.facebook {
+        color: lighten($social-brand-facebook, 10%);
+
+        &:hover,
+        &:focus {
+          color: $social-brand-facebook;
+        }
+      }
+
+      &.twitter {
+        color: lighten($social-brand-twitter, 10%);
+
+        &:hover,
+        &:focus {
+          color: $social-brand-twitter;
+        }
+      }
+
+      &.email {
+        color: lighten($social-brand-email, 10%);
+
+        &:hover,
+        &:focus {
+          color: $social-brand-email;
+        }
+      }
+
+      &.website {
+        color: lighten($accent8, 10%);
+
+        &:hover,
+        &:focus {
+          color: $accent8;
+        }
+      }
+    }
+  }
+
+  .candidate-image {
+    border: 1px solid $medium-gray;
+    width: 200px;
+    
+  }
+  
+  .candidate-views-button {
+    
+    background: $textH1;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'gotham_bookregular';
+    letter-spacing: 1px;
+    color: white;
+    min-height: 55px;
+    &:hover,
+    &:focus {
+        background: darken($textH1, 10%);
+    }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-left: 28px;  
+    text-align: center;
+    vertical-align: middle;  
+  }
+}
