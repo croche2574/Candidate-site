@@ -14,7 +14,9 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require_directory ./common
+//= require_directory .
+//= stub serviceworker
+//= require init.js
 //= require serviceworker-companion
 
 $(document).on('turbolinks:load', function() {
