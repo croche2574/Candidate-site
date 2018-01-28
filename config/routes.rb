@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
-  get 'candidates/new'
+  #get 'candidates/new'
 
   get 'users/new'
 
