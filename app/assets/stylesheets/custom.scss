@@ -224,6 +224,29 @@ footer {
 input, textarea {
   display: block;
   margin: 15px auto;
+  height: 2rem;
+  width: 20rem;
+  padding-left: 1rem;
+}
+
+.btn {
+  background: $textH1;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'gotham_bookregular';
+    letter-spacing: 1px;
+    color: white;
+    min-height: 55px;
+    &:hover,
+    &:focus {
+        background: darken($textH1, 10%);
+    }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-left: 28px;  
+    text-align: center;
+    vertical-align: middle;  
 }
 
 /* Forms */
@@ -234,3 +257,4 @@ input, textarea {
     margin: 0 0 30px 0;
   }
 }
+

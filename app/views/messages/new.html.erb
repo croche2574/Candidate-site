@@ -1,24 +1,25 @@
 <% provide(:title, "Contact Us") %>
-<div class="small-12 columns">
-  <div class="row">
-    <h1>Contact Us</h1>
-  </div>
-  <div class="row">
-    <h3>Send us a message:</h3>
-  </div>
-  <div class="row">
-    <%= form_for @message, url: create_message_url do |f| %>
-      <%= notice %>
-      <%= @message.errors.full_messages.join(', ') %>
+<row>
+  <div class="small-12 small centered medium-centered columns">
+    <div class="row">
+      <span><h1>Contact Us</h1></span>
+    </div>
+    <div class="row">
+      <span><h3>Send us a message:</h3></span>
+    </div>
+    <div class="row">
+      <%= form_for @message, url: create_message_url do |f| %>
+        <%= notice %>
+        <%= @message.errors.full_messages.join(', ') %>
 
-      <%= f.text_field :name, placeholder: 'name' %>
-      <%= f.email_field :email, placeholder: 'email' %>
-      <%= f.phone_field :phone_number, placeholder: 'phone number' %>
-      <%= f.text_area :body, placeholder: 'body' %>
-      <%= f.submit 'Send' %>
-    <% end %>
-  </div>
-  <div class="row">
-    <h3>Contact us on Facebook<h3>
+        <%= f.text_field :name, placeholder: 'name' %>
+        <%= f.email_field :email, placeholder: 'email' %>
+        <%= f.text_area :body, placeholder: 'body' %>
+        <%= f.submit 'Send', class: 'btn' %>
+      <% end %>
+    </div>
+    <div class="row">
+      <h3>Contact us on Facebook<h3>
+    </div>
   </div>
 </div>

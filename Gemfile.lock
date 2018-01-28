@@ -225,7 +225,7 @@ DEPENDENCIES
   coffee-script-source (= 1.8.0)
   figaro
   font-awesome-rails
-  foundation-rails
+  foundation-rails (~> 6.0)
   jbuilder (~> 2.5)
   jquery-rails
   jquery-turbolinks
