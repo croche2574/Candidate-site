@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
-  #get 'candidates/new'
+  get 'candidates/new'
 
   get 'users/new'
 
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'messages#new', as: 'new_message'
   post 'contact', to: 'messages#create', as: 'create_message'
   get  '/signup',  to: 'users#new'
-  get  '/candidate-add',  to: 'candidates#new'
+  #get  '/candidate-add',  to: 'candidates#new'
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
