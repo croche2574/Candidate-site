@@ -6,6 +6,7 @@ class CandidatesController < ApplicationController
 
   def home
     @candidates = Candidate.all
+    @pastDue = PastDue.all
   end
 
   def new

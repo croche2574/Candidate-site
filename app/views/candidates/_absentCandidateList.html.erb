@@ -1,0 +1,13 @@
+<div class="row">
+    <h4>The following candidates were invited to participate and received several 
+    reminders, but to date they have been non-responsive.</h4>
+</div>
+<% @pastDue.each do |pastDue| %>
+    <div class="row">
+        <h5><%= pastDue.name %></h4>
+    </div>
+    <div class="row">
+        <p><%= pastDue.race %></p>
+        <br>
+    </div>
+<% end %>
