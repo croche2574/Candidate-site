@@ -5,20 +5,18 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2.4.3
 
-* System dependencies
+* System dependencies - run bundle to install dependencies
 
-* Configuration
+* Configuration - already done, use db browser for sqlite to input data on candidates.
 
-* Database creation
+* Database creation - rake the latest schema file
 
 * Database initialization
 
-* How to run the test suite
+* How to run the test suite - Coming soon!
 
-* Services (job queues, cache servers, search engines, etc.)
+* Deployment instructions - run using apache and passenger
 
-* Deployment instructions
-
-* ...
+custom.css contains design elements similar to the DPCF website.  Better documentation coming soon.
