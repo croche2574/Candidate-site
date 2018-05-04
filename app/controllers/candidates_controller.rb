@@ -1,11 +1,11 @@
 class CandidatesController < ApplicationController
   
   def index
-    @candidates = Candidate.all
+    @candidates = Candidate.all.order(:loadOrder)
   end
 
   def home
-    @candidates = Candidate.all
+    @candidates = Candidate.all.order(:loadOrder)
     @pastDue = PastDue.all
   end
 
