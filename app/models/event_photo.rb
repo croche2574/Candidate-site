@@ -1,0 +1,2 @@
+class EventPhoto < ApplicationRecord
+end

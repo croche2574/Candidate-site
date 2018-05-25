@@ -16,33 +16,7 @@ class CandidatesController < ApplicationController
   def show
     @candidate = Candidate.find(params[:id])
   end
-
-  def create
-    
-    @candidate = Candidate.new(candidate_params)
-    if @candidate.save
-      flash[:success] = "Candidate Added!"
-      redirect_to @candidate
-    else
-      render 'new'
-    end
-  end
-
-  def edit
-    @candidate = Candidate.find(params[:id])
-  end
-
-  def update
-    @candidate = Candidate.find(params[:id])
-    if @candidate.update_attributes(candidate_params)
-      # Handle a successful update.
-      flash[:success] = "Candidate updated"
-      redirect_to @candidate
-    else
-      render 'edit'
-    end
-  end
-
+  
   private
 
     def candidate_params

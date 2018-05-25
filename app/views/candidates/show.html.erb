@@ -12,12 +12,14 @@
         <p><%= @candidate.section1 %></p>
     <% end %>
   </div>
-  <div class="row"> 
-    <% if @candidate.section2 %>
-        <h4>Seeking broader rights and better wages for workers:</h4>
-        <p><%= @candidate.section2 %></p>
-    <% end %>
-  </div>
+  <% if @candidate.section2 %>
+    <div class="row"> 
+      <h4>Seeking broader rights and better wages for workers:</h4>
+    </div>
+    <div class="row">
+      <p><%= @candidate.section2 %></p>
+    </div>
+  <% end %>
   <div class="row"> 
     <% if @candidate.section3 %>
         <h4>Seeking to maintain a strong economy:</h4>
