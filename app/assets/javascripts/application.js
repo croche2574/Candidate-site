@@ -25,9 +25,6 @@ $(document).on('turbolinks:load', function() {
 });
 
 $(document).on('turbolinks:load', function() {
-    $('.swipebox').swipebox();
-});
-$(document).on('turbolinks:load', function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         

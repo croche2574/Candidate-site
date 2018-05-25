@@ -1,9 +1,13 @@
 <div class="card">
     <div class="card-image">
-        <%= image_for candidate %>
-    </div>
-    <div class="overlay-text">
-        <p>Candidate for <%= candidate.race %>.</p>
+        <div class="image-hover-wrapper">
+            <a href="#">
+                <% image_for candidate %>
+                <span class="image-hover-wrapper-reveal">
+                    <p>Check it<br><i class="fa fa-link" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
     </div>
     <div class="card-section">
         <h4 class="candidate-info"><%= candidate.name %></h4>
