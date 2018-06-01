@@ -12,6 +12,7 @@
 //
 //= require jquery3
 //= require jquery_ujs
+//= require jquery-ui
 //= require foundation
 //= require turbolinks
 //= require_directory .
@@ -21,21 +22,22 @@
 
 $(document).on('turbolinks:load', function() {
     $(function(){ $(document).foundation(); });
-  });
 
-$(document).on('turbolinks:load', function() {
-    $(".morelink").click(function(){
-        if($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
+    $(".show-more a").on("click", function() {
+        var $this = $(this); 
+        var $content = $this.parent().prev("div.content");
+        var linkText = $this.text().toUpperCase();    
+    
+        if(linkText === "SHOW MORE"){
+            linkText = "Show less";
+            $content.switchClass("hideContent", "showContent", 400);
         } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
+            linkText = "Show more";
+            $content.switchClass("showContent", "hideContent", 400);
+        };
+    
+        $this.text(linkText);
+    })
     $("#responsive-nav-social").attr("data-sticky", "true").foundation();
 });
     

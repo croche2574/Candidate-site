@@ -108,3 +108,14 @@ $about-the-candidate-separator-thickness: 0.125rem;
     vertical-align: middle;  
   }
 }
+
+.hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 11em;
+}
+
+.showContent {
+  line-height: 1em;
+  height: auto;
+}

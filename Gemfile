@@ -75,3 +75,5 @@ gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'b
 gem "nilify_blanks"
 
 gem 'bootsnap'
+
+gem 'jquery-ui-rails'
