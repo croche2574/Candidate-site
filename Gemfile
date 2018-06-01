@@ -75,8 +75,3 @@ gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'b
 gem "nilify_blanks"
 
 gem 'bootsnap'
-
-gem 'gmaps4rails'
-
-gem 'lodash-rails'
-

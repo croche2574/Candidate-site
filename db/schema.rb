@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_22_211935) do
+ActiveRecord::Schema.define(version: 2018_05_04_192401) do
 
   create_table "candidates", force: :cascade do |t|
     t.string "race"
@@ -33,16 +33,6 @@ ActiveRecord::Schema.define(version: 2018_05_22_211935) do
     t.string "section7"
     t.string "section8"
     t.integer "loadOrder"
-    t.integer "confirmedSpeaker"
-  end
-
-  create_table "event_photos", force: :cascade do |t|
-    t.string "imgurID"
-    t.string "title"
-    t.text "description"
-    t.string "album"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "past_dues", force: :cascade do |t|

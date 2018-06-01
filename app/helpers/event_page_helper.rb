@@ -1,3 +1,0 @@
-module EventPageHelper
-    
-end

@@ -2,7 +2,7 @@
 
 /* Color Palette */
 $textH1: #1798CB;
-$mainColor: #005D7D;
+$textMain: #005D7D;
 $navborder: #78909c;
 $accent1: #003262;
 $accent2: #83B6CD;
@@ -32,27 +32,27 @@ $accent9: #f41b49;
 
 /* Text Styles */
 h1 {
-    color: $textH1;
+    color: #1798CB;
     font-family: "gotham_boldregular";
 }
 
 h2 {
-    color: $mainColor;
+    color: #005D7D;
     font-family: "gotham_bookregular";
 }
 
 h3 {
-    color: $mainColor;
+    color: #005D7D;
     font-family: "gotham_bookregular";
 }
 
 h4 {
-    color: $mainColor;
+    color: #005D7D;
     font-family: "gotham_bookregular";
 }
 
 h5 {
-    color: $mainColor;
+    color: #005D7D;
     font-family: "gotham_bookregular";
 }
 
@@ -157,10 +157,10 @@ footer {
         }
     }
     background-color: #003262;
-    border-bottom-color: $navborder;
-    border-left-color: $navborder;
-    border-right-color: $navborder;
-    color: $navborder;
+    border-bottom-color: #78909c;
+    border-left-color: #78909c;
+    border-right-color: #78909c;
+    color: #78909c;
     font-family: 'gotham_bookregular';
     font-size: 14px;
     font-weight: 400;
@@ -195,7 +195,7 @@ footer {
     padding-right: .5rem; 
     span {
         font-family: 'gotham_bookregular';
-        color: $mainColor;
+        color: #005D7D;
         
         padding-left: 15px;
         padding-right: 15px;
