@@ -25,7 +25,7 @@ $(document).on('turbolinks:load', function() {
         var $content = $this.parent().prev("div.content");
         var linkText = $this.text().toUpperCase();    
     
-        if(linkText === "SHOW MORE"){
+        if(linkText === "SHOW MORE >>"){
             linkText = "Show less <<";
             $content.switchClass("hideContent", "showContent", 400);
         } else {
