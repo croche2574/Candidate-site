@@ -35,7 +35,7 @@ $(document).on('turbolinks:load', function() {
     
         $this.text(linkText);
     })
-    $("#responsive-nav-social").attr("data-sticky", "true").foundation();
+
 });
     
 
