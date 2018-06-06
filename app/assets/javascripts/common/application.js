@@ -16,9 +16,6 @@
 //= require foundation
 //= require turbolinks
 //= require_directory .
-//= stub serviceworker
-//= require init.js
-//= require serviceworker-companion
 
 $(document).on('turbolinks:load', function() {
     $(function(){ $(document).foundation(); });

@@ -52,8 +52,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'foundation-rails', '~> 6.0' # required
 
-gem 'serviceworker-rails'
-
 gem 'coffee-script-source', '1.8.0'
 
 gem 'jquery-rails'
