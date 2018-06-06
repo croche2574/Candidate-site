@@ -32,27 +32,27 @@ $accent9: #f41b49;
 
 /* Text Styles */
 h1 {
-    color: #1798CB;
+    color: $textH1;
     font-family: "gotham_boldregular";
 }
 
 h2 {
-    color: #005D7D;
+    color: $textMain;
     font-family: "gotham_bookregular";
 }
 
 h3 {
-    color: #005D7D;
+    color: $textMain;
     font-family: "gotham_bookregular";
 }
 
 h4 {
-    color: #005D7D;
+    color: $textMain;
     font-family: "gotham_bookregular";
 }
 
 h5 {
-    color: #005D7D;
+    color: $textMain;
     font-family: "gotham_bookregular";
 }
 
@@ -156,11 +156,11 @@ footer {
           color: lighten(#8c8e91, 15%);
         }
     }
-    background-color: #003262;
-    border-bottom-color: #78909c;
-    border-left-color: #78909c;
-    border-right-color: #78909c;
-    color: #78909c;
+    background-color: $accent1;
+    border-bottom-color: $navborder;
+    border-left-color: $navborder;
+    border-right-color: $navborder;
+    color: $navborder;
     font-family: 'gotham_bookregular';
     font-size: 14px;
     font-weight: 400;
@@ -195,7 +195,7 @@ footer {
     padding-right: .5rem; 
     span {
         font-family: 'gotham_bookregular';
-        color: #005D7D;
+        color: $textMain;
         
         padding-left: 15px;
         padding-right: 15px;

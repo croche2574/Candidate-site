@@ -11,6 +11,13 @@ $about-the-candidate-text-transform: uppercase;
 $about-the-candidate-separator-width: 5rem;
 $about-the-candidate-separator-thickness: 0.125rem;
 
+.text-container {
+  .content {
+    font-family: 'gotham_bookregular';
+    color: $textMain;
+  }
+}
+
 .about-the-candidate {
   background-color: $white;
   padding: 1rem;

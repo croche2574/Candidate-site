@@ -26,10 +26,10 @@ $(document).on('turbolinks:load', function() {
         var linkText = $this.text().toUpperCase();    
     
         if(linkText === "SHOW MORE"){
-            linkText = "Show less";
+            linkText = "Show less <<";
             $content.switchClass("hideContent", "showContent", 400);
         } else {
-            linkText = "Show more";
+            linkText = "Show more >>";
             $content.switchClass("showContent", "hideContent", 400);
         };
     
