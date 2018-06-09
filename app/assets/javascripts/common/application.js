@@ -20,6 +20,13 @@
 $(document).on('turbolinks:load', function() {
     $(function(){ $(document).foundation(); });
 
+    $(function(){
+        if($(window).width() < 960){
+            $('div.content').removeClass('showContent').addClass('hideContent');
+            $(".show-more a").text("Show more >>");
+        }
+    })
+
     $(".show-more a").on("click", function() {
         var $this = $(this); 
         var $content = $this.parent().prev("div.content");

@@ -72,8 +72,6 @@ $nav-bg-color: $accent1;
 
     li {
       font-size: 1.5rem;
-      
-
       .fa {
         color: $nav-text-color;
         margin-right: -0.7rem;
@@ -89,6 +87,27 @@ $nav-bg-color: $accent1;
         padding-right: 1.5rem;
         background: white;
         box-shadow: 0 7px 0 white, 0 14px 0 white;
+      }
+    }
+    .li {
+      .button {
+        background: $textH1;
+        border: 1px solid white;
+        border-radius: 4px;
+        font-family: 'gotham_bookregular';
+        letter-spacing: 1px;
+        color: white;
+        min-height: 55px;
+        &:hover,
+        &:focus {
+            background: darken($textH1, 10%);
+        }
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 28px;
+        padding-left: 28px;  
+        text-align: center;
+        vertical-align: middle; 
       }
     }
   }
