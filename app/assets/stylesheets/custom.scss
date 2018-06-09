@@ -116,6 +116,7 @@ $nav-bg-color: $accent1;
 .responsive-nav-social {
   padding: $nav-padding;
   background-color: $nav-bg-color;
+  z-index: 100;
 
    &.is-stuck {
     width: 100%;
