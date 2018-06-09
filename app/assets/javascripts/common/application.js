@@ -43,6 +43,8 @@ $(document).on('turbolinks:load', function() {
         $this.text(linkText);
     })
 
+    $(".sticky-header").sticky({topSpacing:0});
+
 });
     
 

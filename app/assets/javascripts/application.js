@@ -12,8 +12,9 @@
 //
 //= require jquery3
 //= require jquery_ujs
+//= require jquery.sticky.js
 //= require foundation
 //= require turbolinks
-//= require_directory ./common
+//= require_tree .
 
 
