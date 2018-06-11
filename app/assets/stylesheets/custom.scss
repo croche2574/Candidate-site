@@ -56,6 +56,15 @@ h5 {
     font-family: "gotham_bookregular";
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Nav-Bar */
 $nav-padding: 1rem;
 $nav-text-color: white;
@@ -167,6 +176,10 @@ $nav-bg-color: $accent1;
   width: 100%;
 }
 
+#content {
+  flex: 1 0 auto;
+}
+
 /* Footer */
 footer {
     a {
@@ -181,6 +194,7 @@ footer {
     border-left-color: $navborder;
     border-right-color: $navborder;
     color: $navborder;
+    flex-shrink: 0;
     font-family: 'gotham_bookregular';
     font-size: 14px;
     font-weight: 400;
