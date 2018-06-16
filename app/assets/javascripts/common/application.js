@@ -17,35 +17,49 @@
 //= require turbolinks
 //= require_directory .
 
-$(document).on('turbolinks:load', function() {
-    $(function(){ $(document).foundation(); });
+$(document).on('turbolinks:load', function () {
+    $(function () {
+        $(document).foundation();
+    });
 
-    $(function(){
-        if($(window).width() < 960){
+    $(function () {
+        if ($(window).width() < 960) {
             $('div.content').removeClass('showContent').addClass('hideContent');
             $(".show-more a").text("Show more >>");
         }
     })
 
-    $(".show-more a").on("click", function() {
-        var $this = $(this); 
+    $(".show-more a").on("click", function () {
+        var $this = $(this);
         var $content = $this.parent().prev("div.content");
-        var linkText = $this.text().toUpperCase();    
-    
-        if(linkText === "SHOW MORE >>"){
+        var linkText = $this.text().toUpperCase();
+
+        if (linkText === "SHOW MORE >>") {
             linkText = "Show less <<";
             $content.switchClass("hideContent", "showContent", 400);
         } else {
             linkText = "Show more >>";
             $content.switchClass("showContent", "hideContent", 400);
         };
-    
+
         $this.text(linkText);
     })
 
-    $(".sticky-header").sticky({topSpacing:0, zIndex:1000});
-
+    $(".sticky-header").sticky({
+        topSpacing: 0,
+        zIndex: 1000
+    });
 });
-    
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
 
+$(function(){$(".scroll").click(function(){
+    $("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");
+    return false})
+})

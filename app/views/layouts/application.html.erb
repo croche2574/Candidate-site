@@ -21,10 +21,11 @@
     <%= render 'layouts/tagsBody'%>
     
     <div id="content">
+      <div class='thetop'></div>
       <%= render 'layouts/header'%>
-      <%= yield %>    
+      <%= yield %>
+      <%= render 'layouts/scrollTop'%>
       <%= render 'layouts/footer'%>
-      
     </div>
   </body>
 </html>
