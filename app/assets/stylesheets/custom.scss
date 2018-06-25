@@ -334,6 +334,7 @@ textarea {
     letter-spacing: 1px;
     color: white;
     margin: auto;
+    max-width: 15rem;
     min-height: 35px;
     &:hover,
     &:focus {
@@ -345,6 +346,6 @@ textarea {
     padding-left: 28px;
     text-align: center;
     vertical-align: middle;
-    width: 20%;
+    
   }
 }
