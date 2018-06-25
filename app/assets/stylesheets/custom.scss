@@ -321,3 +321,30 @@ textarea {
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s; 	
 }
+
+.forum {
+  text-align: center;
+
+  .forum-btn {
+    background: $textH1;
+    border: 1px solid white;
+    border-radius: 4px;
+    display: block;
+    font-family: 'gotham_bookregular';
+    letter-spacing: 1px;
+    color: white;
+    margin: auto;
+    min-height: 35px;
+    &:hover,
+    &:focus {
+      background: darken($textH1, 10%);
+    }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-left: 28px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20%;
+  }
+}
