@@ -1,2 +1,0 @@
-class EventPhoto < ApplicationRecord
-end
