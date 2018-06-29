@@ -1,49 +1,51 @@
 <% @candidates.each do |candidate| %>
-    <main class="main">
-        <div class="row">
-            <div class="about-the-candidate cardTemplate">
-                <h3 class="race"><%= candidate.race %></h3>
-                <div class="row">
-                    <div class="small-12 medium-3 columns">
-                        <div class="candidate-image">
-                            <%= image_for candidate %>
-                        </div>
-                        <div class="candidate-social socialMedia">
-                            <% if candidate.facebook %>
-                                <a href="<%= candidate.facebook %>" class="facebook">
-                                    <span class="fa-stack fa-lg facebook">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span></a>
-                            <% end %>
-                            <% if candidate.email %>
-                                <a href="mailto:<%= candidate.email %>" class="email">
-                                    <span class="fa-stack fa-lg email">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                                </span></a>
-                            <% end %>
-                            <% if candidate.website %>
-                                <a href="<%= candidate.website %>" class="website">
-                                    <span class="fa-stack fa-lg website">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-link fa-stack-1x fa-inverse"></i>
-                                </span></a></div>
-                            <% end %>
-                        </div>
-                        <div class="small-12 medium-8 columns">
-                            <h4 class="candidate-info name"><%= candidate.name %></h4>
-                            <h5 class="progressive-rating">PCPDC Rating: <%= candidate.rating %></h5>
-                            <ul>
-                                <li class="phone-number"><span>Phone Number:</span><a href="tel:"> <%= candidate.phone %></a></li>
-                                <li class="address">Address: <%= candidate.address %></li>
-                            </ul>
-                            <%= link_to "View Responses",
-                                candidate_path(candidate),
-                                class: "candidate-views-button button" %>
-                        </div>
-                   </div>
-                </div>
-        </div><br>
-    </main>
+    <% if candidate.responded == 1 %>  
+        <main class="main">
+            <div class="row">
+                <div class="about-the-candidate cardTemplate">
+                    <h3 class="race"><%= candidate.race %></h3>
+                    <div class="row">
+                        <div class="small-12 medium-3 columns">
+                            <div class="candidate-image">
+                                <%= image_for candidate %>
+                            </div>
+                            <div class="candidate-social socialMedia">
+                                <% if candidate.facebook %>
+                                    <a href="<%= candidate.facebook %>" class="facebook">
+                                        <span class="fa-stack fa-lg facebook">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span></a>
+                                <% end %>
+                                <% if candidate.email %>
+                                    <a href="mailto:<%= candidate.email %>" class="email">
+                                        <span class="fa-stack fa-lg email">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span></a>
+                                <% end %>
+                                <% if candidate.website %>
+                                    <a href="<%= candidate.website %>" class="website">
+                                        <span class="fa-stack fa-lg website">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                                    </span></a></div>
+                                <% end %>
+                            </div>
+                            <div class="small-12 medium-8 columns">
+                                <h4 class="candidate-info name"><%= candidate.name %></h4>
+                                <h5 class="progressive-rating">PCPDC Rating: <%= candidate.rating %></h5>
+                                <ul>
+                                    <li class="phone-number"><span>Phone Number:</span><a href="tel:"> <%= candidate.phone %></a></li>
+                                    <li class="address">Address: <%= candidate.address %></li>
+                                </ul>
+                                <%= link_to "View Responses",
+                                    candidate_path(candidate),
+                                    class: "candidate-views-button button" %>
+                            </div>
+                    </div>
+                    </div>
+            </div><br>
+        </main>
+    <% end %>
 <% end %>

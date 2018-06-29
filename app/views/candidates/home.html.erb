@@ -42,6 +42,6 @@
 <br>
 <%= render 'candidates/candidatecard'%>
 <br>
-<% if @pastDue.any? %>
+<% if noResponse %>
     <%= render 'candidates/absentCandidateList'%>
 <% end %>
