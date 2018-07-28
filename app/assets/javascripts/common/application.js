@@ -49,17 +49,17 @@ $(document).on('turbolinks:load', function () {
         topSpacing: 0,
         zIndex: 1000
     });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50 ) {
-        $('.scrolltop:hidden').stop(true, true).fadeIn();
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
-        $('.scrolltop').stop(true, true).fadeOut();
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
 });
 
-$(function(){$(".scroll").click(function(){
-    $("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");
-    return false})
-})
